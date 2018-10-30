@@ -71,62 +71,46 @@ h2 {
 }
 
 /*
- * Styles for the deck of cards
+ * Styles for the deck
  */
 
-.deck {
-    width: 660px;
-    min-height: 680px;
-    /*
-    *background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
-    */
-    background-color: rgba(28, 38, 47, 0.7);
-    padding: 32px;
-    /*
-    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
-    */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 0;
+ .deck {
+     width: 660px;
+     min-height: 680px;
+     background-color: rgba(28, 38, 47, 0.7);
+     padding: 32px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 0 0;
+ }
+
+ .projects-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   flex-direction: row;
+ }
+
+ .project-card {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #02b3e4;
+  background-color: rgba(28, 38, 47, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
 }
 
-.deck .card {
-    height: 125px;
-    width: 125px;
-    background: #2e3d49;
-    font-size: 0;
-    color: #ffffff;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 15px 1px #02b3e4;
+.project-img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 1px #02b3e4;
 }
 
-.deck .card.open {
-    transform: rotateY(0);
-    background: #e49202c9;
-    cursor: default;
-    box-shadow: 0px 0px 15px 1px #02b3e4;
-}
 
-.deck .card.show {
-    font-size: 33px;
-}
-
-.deck .card.match {
-    cursor: default;
-    background: #66e402bd;
-    font-size: 33px;
-    box-shadow: 0px 0px 15px 1px #02b3e4;
-}
-
-/*
- * Styles for the Score Panel
- */
 
 .score-panel {
     font-size: 20px;
@@ -136,78 +120,10 @@ h2 {
     margin: 0 15px 15px 15px;
 }
 
-.score-panel .stars {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin: 0 5px 0 0;
-}
-
-.score-panel .stars li {
-    list-style: none;
-    display: inline-block;
-}
-
-.score-panel .restart {
-    float: right;
-    cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
-#stars {
-  margin: 0;
-  padding: 0;
-  margin: 10px 0 20px 0;
-}
-
-#time {
-  margin: 0;
-  padding: 0;
-  margin: 10px 0 20px 0;
-}
-
 #moves {
   margin: 0;
   padding: 0;
   margin: 10px 0 20px 0;
-}
-
-
-.you-win {
-  width: 680px;
-  background-color: #1c262f;
-  padding: 20px;
-  text-align: center;
-  color: #02b3e4;
-  text-shadow: 2px 1px 1px black;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px 1px #02b3e4;
-  position: absolute;
-}
-
-/*
- * Styles for the you won reset button.
- */
-.green {
-    color: #66e402bd;
-    background-color: #2e3d49;
-}
-
-.button {
-    border-radius: 5px;
-    border-color: #66e402bd;
-    box-shadow: 0px 0px 15px 1px #66e402bd;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
 }
 
 .footer {
