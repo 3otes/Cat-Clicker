@@ -32,12 +32,17 @@
         width: 315px;
         margin-bottom: 0;
     }
-    .you-win {
-        width: 315px;
-        padding: 20px;
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
     }
-    .win {
-        margin: 0;
+    .project-card{
+      max-width: 150px;
+    }
+    .project-img {
+      max-width: 100%;
     }
 }
 
@@ -54,7 +59,6 @@
     .score-panel {
         font-size: 20px;
         margin: 0 10px 10px 10px;
-
     }
     .responsive-p {
         display: block;
@@ -65,21 +69,11 @@
         min-height: 335px;
         padding: 3px;
     }
-    .deck .card {
-        height: 100px;
-        width: 100px;
-        font-size: 0;
-        margin: 6px;
-    }
     .footer {
         width: 480px;
         margin-bottom: 0;
     }
-    .you-win {
-        width: 480px;
-        padding: 20px;
-    }
-    .win {
-        margin: 0;
+    .project-card{
+      max-width: 220px;
     }
 }
